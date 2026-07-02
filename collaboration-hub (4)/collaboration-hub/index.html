@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<title>Dashboard — Menasco Collaboration Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="mark"><img src="assets/menasco-mark-white.png" alt="Menasco"></span>
+      <span>MENASCO</span>
+    </div>
+    <div class="topbar-search">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <input type="text" placeholder="Search the hub...">
+    </div>
+    <nav class="topbar-nav">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="shared-links.html">Shared links</a>
+      <a href="deadlines.html">Deadlines</a>
+      <a href="rfis.html">RFIs</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="topbar-right">
+      <i class="ti ti-bell" aria-hidden="true"></i>
+      <i class="ti ti-help" aria-hidden="true"></i>
+      <span class="topbar-avatar">EH</span>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <aside class="left-rail">
+      <a class="rail-stat accent" href="#urgent">
+        <div class="num">4</div>
+        <div class="label">Needs your action</div>
+      </a>
+      <a class="rail-stat" href="deadlines.html">
+        <div class="num">4</div>
+        <div class="label">Open milestones</div>
+      </a>
+
+      <div class="rail-divider"></div>
+
+      <div class="rail-search">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search for...">
+      </div>
+      <div class="tree">
+        <div class="tree-item root"><i class="ti ti-chevron-down chev" aria-hidden="true"></i><i class="ti ti-brand-google-drive ficon" aria-hidden="true"></i>Collaboration Hub</div>
+        <div class="tree-children">
+          <div class="tree-item depth-1"><i class="ti ti-chevron-right chev" aria-hidden="true"></i><i class="ti ti-folder ficon" aria-hidden="true"></i>Drawings &amp; specs</div>
+          <div class="tree-item depth-1"><i class="ti ti-chevron-right chev" aria-hidden="true"></i><i class="ti ti-folder ficon" aria-hidden="true"></i>Quality documents</div>
+          <div class="tree-item depth-1"><i class="ti ti-chevron-right chev" aria-hidden="true"></i><i class="ti ti-folder ficon" aria-hidden="true"></i>Purchase orders</div>
+          <div class="tree-item depth-1"><i class="ti ti-chevron-right chev" aria-hidden="true"></i><i class="ti ti-folder ficon" aria-hidden="true"></i>Supplier submissions</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <div class="page-title-row">
+        <h1>What needs attention</h1>
+        <p>Everything pulled from across the hub that needs action, ranked by urgency.</p>
+      </div>
+
+      <div class="panel-body" style="padding: 12px 20px 20px;" id="urgent">
+
+        <div class="card" style="display:flex; align-items:center; gap:16px; border-color:var(--coral); margin-bottom:20px;">
+          <i class="ti ti-sparkles" style="font-size:22px; color:var(--coral-dark); flex-shrink:0;" aria-hidden="true"></i>
+          <div style="flex:1;">
+            <p style="font-weight:500; font-size:14px; margin-bottom:2px;">Ask the hub assistant</p>
+            <p style="font-size:12.5px; color:var(--text-secondary);">Click the chat icon in the bottom-right corner of any page to ask about files, deadlines, issues, or suppliers.</p>
+          </div>
+        </div>
+
+        <div class="priority-group">
+
+          <a class="priority-row" href="deadlines.html">
+            <div class="priority-icon warning"><i class="ti ti-calendar-event" aria-hidden="true"></i></div>
+            <div class="priority-body">
+              <div class="priority-title">Initial design review due in 4 days</div>
+              <div class="priority-sub">Owner: Engineering &middot; due 2026-07-03</div>
+            </div>
+            <span class="priority-meta">Deadlines</span>
+            <i class="ti ti-chevron-right priority-chev" aria-hidden="true"></i>
+          </a>
+
+          <a class="priority-row" href="projects.html">
+            <div class="priority-icon info"><i class="ti ti-lock" aria-hidden="true"></i></div>
+            <div class="priority-body">
+              <div class="priority-title">Tolerance specification.docx is checked out</div>
+              <div class="priority-sub">In progress by Jane (Engineering) &middot; opened 40 min ago</div>
+            </div>
+            <span class="priority-meta">Projects</span>
+            <i class="ti ti-chevron-right priority-chev" aria-hidden="true"></i>
+          </a>
+
+          <a class="priority-row" href="rfis.html">
+            <div class="priority-icon neutral"><i class="ti ti-help-circle" aria-hidden="true"></i></div>
+            <div class="priority-body">
+              <div class="priority-title">Delta Components hasn't responded to RFI-2026-008</div>
+              <div class="priority-sub">CNC machining capability &middot; due in 9 days</div>
+            </div>
+            <span class="priority-meta">RFIs</span>
+            <i class="ti ti-chevron-right priority-chev" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="dt-foot">
+        <span>4 items need attention</span>
+        <span>Last updated 2026-06-26</span>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/search.js"></script>
+<script src="assets/ai-assistant.js"></script>
+</body>
+</html>

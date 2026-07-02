@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<title>Announcements — Menasco Collaboration Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="mark"><img src="assets/menasco-mark-white.png" alt="Menasco"></span>
+      <span>MENASCO</span>
+    </div>
+    <div class="topbar-search">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <input type="text" placeholder="Search the hub...">
+    </div>
+    <nav class="topbar-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="shared-links.html">Shared links</a>
+      <a href="deadlines.html">Deadlines</a>
+      <a href="rfis.html">RFIs</a>
+      <a href="announcements.html" class="active">Announcements</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="topbar-right">
+      <i class="ti ti-bell" aria-hidden="true"></i>
+      <i class="ti ti-help" aria-hidden="true"></i>
+      <span class="topbar-avatar">EH</span>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <aside class="left-rail">
+      <a class="rail-stat accent" href="#ann-list">
+        <div class="num">3</div>
+        <div class="label">Announcements</div>
+      </a>
+      <a class="rail-stat" href="#ann-list">
+        <div class="num">1</div>
+        <div class="label">This week</div>
+      </a>
+    </aside>
+
+    <main class="main-panel">
+      <div class="page-title-row">
+        <h1>Announcements</h1>
+        <p>The latest updates, changes, and need-to-knows. Newest first.</p>
+      </div>
+
+      <div class="panel-body" style="padding: 12px 20px 20px;" id="ann-list">
+        <div class="card">
+
+          <div class="announcement">
+            <div class="announcement-date">2026-06-26</div>
+            <h4><span class="tag update">New</span>Welcome to the collaboration hub</h4>
+            <p class="body">This site is now live and replaces previous file-sharing methods over email. Bookmark this page — it's the single source of truth for files, deadlines, and updates going forward.</p>
+          </div>
+
+          <div class="announcement">
+            <div class="announcement-date">2026-06-20</div>
+            <h4><span class="tag">Deadline change</span>Supplier submission date moved</h4>
+            <p class="body">The supplier quote submission deadline has shifted to July 10. See the deadlines page for the full milestone tracker.</p>
+          </div>
+
+          <div class="announcement">
+            <div class="announcement-date">2026-06-12</div>
+            <h4><span class="tag">Process</span>New quality document folder added</h4>
+            <p class="body">Inspection reports and certifications now live in their own folder under files &amp; folders, separate from drawings and specs.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="dt-foot">
+        <span>3 announcements</span>
+        <span>Last updated 2026-06-26</span>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/search.js"></script>
+<script src="assets/ai-assistant.js"></script>
+</body>
+</html>
