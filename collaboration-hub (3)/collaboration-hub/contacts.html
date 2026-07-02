@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<title>Contacts — Menasco Collaboration Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="mark"><img src="assets/menasco-mark-white.png" alt="Menasco"></span>
+      <span>MENASCO</span>
+    </div>
+    <div class="topbar-search">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <input type="text" placeholder="Search the hub...">
+    </div>
+    <nav class="topbar-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="shared-links.html">Shared links</a>
+      <a href="deadlines.html">Deadlines</a>
+      <a href="rfis.html">RFIs</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="contacts.html" class="active">Contacts</a>
+    </nav>
+    <div class="topbar-right">
+      <i class="ti ti-bell" aria-hidden="true"></i>
+      <i class="ti ti-help" aria-hidden="true"></i>
+      <span class="topbar-avatar">EH</span>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <aside class="left-rail">
+      <a class="rail-stat accent" href="#contact-table">
+        <div class="num">4</div>
+        <div class="label">Contacts</div>
+      </a>
+
+      <div class="rail-divider"></div>
+
+      <div class="rail-search">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search for...">
+      </div>
+      <div class="tree">
+        <div class="tree-item root"><i class="ti ti-chevron-down chev" aria-hidden="true"></i><i class="ti ti-address-book ficon" aria-hidden="true"></i>Directory</div>
+        <div class="tree-children">
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Engineering</div>
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Suppliers</div>
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>IT</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <div class="panel-toolbar">
+        <div class="panel-tabs">
+          <span class="active">All contacts</span>
+        </div>
+        <div class="panel-toolbar-right">
+          <div class="panel-search">
+            <i class="ti ti-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search contacts">
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-body" id="contact-table">
+        <div class="dt-wrap">
+        <table class="dt">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Area</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dt-name-cell"><span class="dt-avatar" style="margin-right:2px;">EL</span>Engineering Lead</td>
+              <td>Engineering</td>
+              <td>Design &amp; specifications</td>
+              <td style="color:var(--coral-dark); font-family:var(--font-mono); font-size:12.5px;">engineering.lead@company.com</td>
+            </tr>
+            <tr>
+              <td class="dt-name-cell"><span class="dt-avatar" style="margin-right:2px;">SR</span>Supplier Relations</td>
+              <td>Procurement</td>
+              <td>Supplier coordination</td>
+              <td style="color:var(--coral-dark); font-family:var(--font-mono); font-size:12.5px;">supplier.relations@company.com</td>
+            </tr>
+            <tr>
+              <td class="dt-name-cell"><span class="dt-avatar" style="margin-right:2px;">PM</span>Project Manager</td>
+              <td>Engineering</td>
+              <td>Deadlines &amp; scheduling</td>
+              <td style="color:var(--coral-dark); font-family:var(--font-mono); font-size:12.5px;">project.manager@company.com</td>
+            </tr>
+            <tr>
+              <td class="dt-name-cell"><span class="dt-avatar" style="margin-right:2px;">IT</span>IT Support</td>
+              <td>IT</td>
+              <td>Site access issues</td>
+              <td style="color:var(--coral-dark); font-family:var(--font-mono); font-size:12.5px;">it.support@company.com</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="dt-foot">
+        <span>4 contacts</span>
+        <span>Last updated 2026-06-26</span>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="assets/search.js"></script>
+<script src="assets/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<title>Deadlines — Menasco Collaboration Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="mark"><img src="assets/menasco-mark-white.png" alt="Menasco"></span>
+      <span>MENASCO</span>
+    </div>
+    <div class="topbar-search">
+      <i class="ti ti-search" aria-hidden="true"></i>
+      <input type="text" placeholder="Search the hub...">
+    </div>
+    <nav class="topbar-nav">
+      <a href="index.html">Dashboard</a>
+      <a href="projects.html">Projects</a>
+      <a href="shared-links.html">Shared links</a>
+      <a href="deadlines.html" class="active">Deadlines</a>
+      <a href="rfis.html">RFIs</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+    <div class="topbar-right">
+      <i class="ti ti-bell" aria-hidden="true"></i>
+      <i class="ti ti-help" aria-hidden="true"></i>
+      <span class="topbar-avatar">EH</span>
+    </div>
+  </header>
+
+  <div class="app-body">
+
+    <aside class="left-rail">
+      <a class="rail-stat accent" href="#dl-table">
+        <div class="num">4</div>
+        <div class="label">Open milestones</div>
+      </a>
+      <a class="rail-stat" href="#dl-table">
+        <div class="num">1</div>
+        <div class="label">Due this week</div>
+      </a>
+      <a class="rail-stat" href="#dl-table">
+        <div class="num">0</div>
+        <div class="label">Overdue</div>
+      </a>
+
+      <div class="rail-divider"></div>
+
+      <div class="rail-search">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search for...">
+      </div>
+      <div class="tree">
+        <div class="tree-item root"><i class="ti ti-chevron-down chev" aria-hidden="true"></i><i class="ti ti-calendar ficon" aria-hidden="true"></i>July 2026</div>
+        <div class="tree-children">
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Design review &middot; Jul 03</div>
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Quote submission &middot; Jul 10</div>
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Prototype delivery &middot; Jul 22</div>
+          <div class="tree-item depth-1"><i class="ti ti-point ficon" aria-hidden="true"></i>Final sign-off &middot; Jul 29</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <div class="panel-toolbar">
+        <div class="panel-tabs">
+          <span class="active">All milestones</span>
+          <span>Due this week</span>
+          <span>Calendar</span>
+        </div>
+        <div class="panel-toolbar-right">
+          <div class="panel-search">
+            <i class="ti ti-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search milestones">
+          </div>
+          <button class="icon-btn" aria-label="Filter"><i class="ti ti-filter" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="panel-body" id="dl-table">
+        <div class="dt-wrap">
+        <table class="dt">
+          <thead>
+            <tr>
+              <th class="checkbox-cell"><input type="checkbox" aria-label="Select all"></th>
+              <th>Milestone</th>
+              <th>Owner</th>
+              <th>Due date</th>
+              <th>Days left</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox-cell"><input type="checkbox"></td>
+              <td class="dt-name-cell"><i class="ti ti-calendar-event" aria-hidden="true"></i>Initial design review</td>
+              <td><div class="dt-person"><span class="dt-avatar">EN</span><a href="#">Engineering</a></div></td>
+              <td style="font-family:var(--font-mono); font-size:12px;">2026-07-03</td>
+              <td style="font-family:var(--font-mono); font-size:12px;">4 days</td>
+              <td><span class="dt-pill completed">On track</span></td>
+            </tr>
+            <tr>
+              <td class="checkbox-cell"><input type="checkbox"></td>
+              <td class="dt-name-cell"><i class="ti ti-calendar-event" aria-hidden="true"></i>Supplier quote submission</td>
+              <td><div class="dt-person"><span class="dt-avatar">SU</span><a href="#">Supplier</a></div></td>
+              <td style="font-family:var(--font-mono); font-size:12px;">2026-07-10</td>
+              <td style="font-family:var(--font-mono); font-size:12px;">11 days</td>
+              <td><span class="dt-pill in-progress">Pending</span></td>
+            </tr>
+            <tr>
+              <td class="checkbox-cell"><input type="checkbox"></td>
+              <td class="dt-name-cell"><i class="ti ti-calendar-event" aria-hidden="true"></i>Prototype delivery</td>
+              <td><div class="dt-person"><span class="dt-avatar">SU</span><a href="#">Supplier</a></div></td>
+              <td style="font-family:var(--font-mono); font-size:12px;">2026-07-22</td>
+              <td style="font-family:var(--font-mono); font-size:12px;">23 days</td>
+              <td><span class="dt-pill neutral">Not started</span></td>
+            </tr>
+            <tr>
+              <td class="checkbox-cell"><input type="checkbox"></td>
+              <td class="dt-name-cell"><i class="ti ti-calendar-event" aria-hidden="true"></i>Final sign-off</td>
+              <td><div class="dt-person"><span class="dt-avatar">EN</span><a href="#">Engineering</a></div></td>
+              <td style="font-family:var(--font-mono); font-size:12px;">2026-07-29</td>
+              <td style="font-family:var(--font-mono); font-size:12px;">30 days</td>
+              <td><span class="dt-pill neutral">Not started</span></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div style="padding: 20px;">
+          <div class="section-label">Calendar view</div>
+          <div class="calendar">
+            <div class="calendar-head">
+              <h3 id="cal-month-label">July 2026</h3>
+              <div class="calendar-nav">
+                <span id="cal-prev" style="cursor:pointer;"><i class="ti ti-chevron-left" aria-hidden="true"></i></span>
+                <span id="cal-next" style="cursor:pointer;"><i class="ti ti-chevron-right" aria-hidden="true"></i></span>
+              </div>
+            </div>
+            <div class="cal-grid" id="cal-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dt-foot">
+        <span>4 milestones tracked</span>
+        <span>Last updated 2026-06-26</span>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script>
+  var eventDays = [3, 10, 22, 29];
+  var monthLabel = "July 2026";
+  var firstDayOfWeek = 3;
+  var daysInMonth = 31;
+
+  function renderCalendar() {
+    var grid = document.getElementById('cal-grid');
+    var dows = ['Su','Mo','Tu','We','Th','Fr','Sa'];
+    var html = '';
+    dows.forEach(function(d){ html += '<div class="cal-dow">' + d + '</div>'; });
+    for (var i = 0; i < firstDayOfWeek; i++) html += '<div class="cal-cell empty"></div>';
+    for (var day = 1; day <= daysInMonth; day++) {
+      var hasEvent = eventDays.indexOf(day) !== -1;
+      html += '<div class="cal-cell' + (hasEvent ? ' has-event' : '') + '">' + day + (hasEvent ? '<span class="dot"></span>' : '') + '</div>';
+    }
+    grid.innerHTML = html;
+    document.getElementById('cal-month-label').textContent = monthLabel;
+  }
+  renderCalendar();
+
+  document.getElementById('cal-prev').addEventListener('click', function () {
+    monthLabel = 'June 2026'; firstDayOfWeek = 1; daysInMonth = 30; eventDays = [26];
+    renderCalendar();
+  });
+  document.getElementById('cal-next').addEventListener('click', function () {
+    monthLabel = 'August 2026'; firstDayOfWeek = 6; daysInMonth = 31; eventDays = [];
+    renderCalendar();
+  });
+</script>
+<script src="assets/search.js"></script>
+<script src="assets/ai-assistant.js"></script>
+</body>
+</html>
